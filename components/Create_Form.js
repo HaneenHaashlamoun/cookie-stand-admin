@@ -1,20 +1,7 @@
-import React, { useState } from 'react'
-
 export default function Create_Form(props) {
-    const [sorted] = useState([]);
-    function Handler(event) {
-        event.preventDefault();
-        const save_data = {
-            location: event.target.location.value,
-            min_customers: event.target.min.value,
-            max_customers: event.target.max.value,
-            avg_cookies: event.target.avg.value,
-        }
-        props.updateHandler(save_data)
-    }
     return (
         <div>
-            <form className="flex-col w-3/4 p-2 mx-auto my-8 bg-green-300 rounded-md" onSubmit={Handler} >
+            <form className="flex-col w-3/4 p-2 mx-auto my-8 bg-green-300 rounded-md" onSubmit={props.handler} >
                 <fieldset>
                     <h1 className="my-3 text-2xl text-center" type='text'>Cookie Stand Admin</h1>
                     <div className="flex w-11/12 ml-12">
