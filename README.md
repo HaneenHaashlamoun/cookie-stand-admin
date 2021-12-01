@@ -8,3 +8,5 @@ https://github.com/HaneenHaashlamoun/cookie-stand-admin/pull/1
     - [x] Have a `<main>` component containing `<form>` and a placeholder component showing JSON string of last created Cookie Stand.
     - [x] Have a `<footer>` component that matches spec.
 - [x] Style app using TailwindCSS utility classes.
+
+**Mohammed Silwadi** Helped to complete this lab
