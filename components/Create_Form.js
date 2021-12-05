@@ -1,4 +1,5 @@
 export default function Create_Form(props) {
+    console.log('test');
     return (
         <div>
             <form className="flex-col w-3/4 p-2 mx-auto my-8 bg-green-300 rounded-md" onSubmit={props.handler} >
@@ -21,7 +22,7 @@ export default function Create_Form(props) {
                             <div className="flex"></div><label >Average Cookies per Sales</label>
                             <input type='number' className="w-60  " name="avg" />
                         </div>
-                        <button className="px-20 py-5 ml-2 bg-green-500 top-2 text-gray-50">Create</button>
+                        <button className="px-20 py-5 ml-2 bg-green-500 top-2 text-gray-50" type="submit">Create</button>
                     </div>
                 </fieldset>
             </form>

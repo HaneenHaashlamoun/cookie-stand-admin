@@ -5,7 +5,7 @@ export default function Report_Table(props) {
 
     return (
         <div>
-            <table className="mt-8">
+            <table className="w-5/6 mx-auto mt-4 text-center border border-green-300 rounded-md">
                 <thead className="w-2/3 border-grey-500 ">
                     <tr className="bg-green-500 border-b border-grey-500">
                         <th >Location</th>

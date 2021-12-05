@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import React, { useState } from 'react'
-import Main from '../components/Main'
-import Footer from '../components/Footer'
 import Header from '../components/Header'
+import Cookie_Stand_Admin from '../components/Cookie_Stand_Admin'
 
 export default function Home() {
   return (
@@ -12,8 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />        
       </Head>
       <Header />
-      <Main />
-      <Footer/>      
+      <Cookie_Stand_Admin/>
     </div>
   )
 }

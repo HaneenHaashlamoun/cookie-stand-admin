@@ -2,6 +2,7 @@ import React from 'react'
 import Head from './Head'
 import Main from './Main'
 import Footer from './Footer'
+import { useState } from 'react'
 
 export default function Cookie_Stand_Admin() {
     const [sorted, set_data] = useState([]);
@@ -14,7 +15,7 @@ export default function Cookie_Stand_Admin() {
             min_customers: event.target.min.value,
             max_customers: event.target.max.value,
             avg_cookies: event.target.avg.value,
-            hourly_sales: hourly_sales_calculate(e.target.min.value, e.target.max.value, e.target.avg.value)
+            hourly_sales: hourly_sales_calculate(event.target.min.value, event.target.max.value, event.target.avg.value)
         }
         set_data(sorted => [...sorted, save_data])
     }
