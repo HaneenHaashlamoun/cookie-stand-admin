@@ -2,6 +2,7 @@ import React from 'react'
 import Head from './Head'
 import Main from './Main'
 import Footer from './Footer'
+import Header from './Header'
 import { useState } from 'react'
 
 export default function Cookie_Stand_Admin() {
@@ -30,6 +31,7 @@ export default function Cookie_Stand_Admin() {
     return (
         <div>
             <Head />
+            <Header />
             <Main sorted={sorted} handler={Handler} />
             <Footer counter={sorted.length}/>
         </div>

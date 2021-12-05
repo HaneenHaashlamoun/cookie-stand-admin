@@ -1,8 +1,27 @@
-export default function Create_Form(props) {
-    console.log('test');
+import useResource from '../hooks/useResource'
+
+export default function Create_Form() {
+    const { createResource } = useResource();
+    function onCreate (event) {
+        event.preventDefault();
+        let array=[]
+        for (let index = 0; index < 14; index++) {
+           let value= Math.floor((Math.random() * (event.target.max.value - event.target.min.value) ))
+           array.push(Number(value)+ Number(event.target.min.value))
+        }
+        const obj = {
+                "location": event.target.location.value,
+                "description": "cookie sales report ",
+                "minimum_customers_per_hour": event.target.min.value,
+                "maximum_customers_per_hour": event.target.max.value,
+                "average_cookies_per_sale":event.target.avg.value,
+                'hourly_sales':array,
+        }
+        createResource(obj)
+    }
     return (
         <div>
-            <form className="flex-col w-3/4 p-2 mx-auto my-8 bg-green-300 rounded-md" onSubmit={props.handler} >
+            <form className="flex-col w-3/4 p-2 mx-auto my-8 bg-green-300 rounded-md" onSubmit={onCreate} >
                 <fieldset>
                     <h1 className="my-3 text-2xl text-center" type='text'>Cookie Stand Admin</h1>
                     <div className="flex w-11/12 ml-12">
