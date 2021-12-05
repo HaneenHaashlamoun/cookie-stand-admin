@@ -9,4 +9,5 @@ https://github.com/HaneenHaashlamoun/cookie-stand-admin/pull/1
     - [x] Have a `<footer>` component that matches spec.
 - [x] Style app using TailwindCSS utility classes.
 
-**Mohammed Silwadi** Helped to complete this lab
+**Mohammed Silwadi** Helped to complete lab 37
+**Dua Jaradat** Helped to complete lab 38
