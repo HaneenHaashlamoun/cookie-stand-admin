@@ -1,5 +1,5 @@
-https://github.com/HaneenHaashlamoun/cookie-stand-admin/pull/1
-
+https://github.com/HaneenHaashlamoun/cookie-stand-admin/pull/3
+https://cookie-stand-admin-od7n7xmvw-haneenhaashlamoun.vercel.app/
 ## Feature Tasks and Requirements
 - [x] The spec for lab is screen shot of Cookie Stand Admin Version 1
 - [x] pages/Index.js should…
@@ -14,3 +14,4 @@ https://github.com/HaneenHaashlamoun/cookie-stand-admin/pull/1
 
 # **Mohammed Silwadi** Helped to complete lab 39
 # **Moyad Al-Haj** Helped to complete lab 39
+
