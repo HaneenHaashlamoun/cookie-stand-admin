@@ -1,33 +1,22 @@
 import React from 'react'
 import Link from 'next/link'
+import { useAuth } from '../contexts/auth'
 
 export default function Header() {
+    const { user, logout } = useAuth()
     return (
         <div className="flex items-center justify-between p-4 text-black bg-green-500 w-full mt-0">
-            <h1 className='text-5xl'>Cookie Stand Admin</h1>
-            <Link href='/overview'>
-                <button className="px-4 py-2 font-bold text-black bg-white rounded hover:bg-green-300">
-                    Overview
+            <h1 className="text-2xl">Cookie Stand Admin</h1>
+            <div>
+                <button className="p-2 m-4 font-bold uppercase bg-green-500 rounded text-green hover:bg-green-600 text-gray-50">
+                    {user.username}
                 </button>
-            </Link>
+                <button className="p-2 m-4 font-bold bg-green-600 rounded-lg" onClick={logout}>Sign Out</button>
+                <Link href='/overview' >
+                    <button className='p-2 m-4 font-bold bg-gray-400 rounded-lg '>overview</button>
+                </Link>
+            </div>
 
         </div>
     )
 }
-
-
-
-// function Header() {
-//     return (
-//         <div className="flex items-center justify-between p-4 mt-8 text-black bg-green-500">
-//             <h1 className="text-2xl font-bold">Cookie Stand Admin</h1>
-//             <Link href='/overview'>
-//                 <button className="px-4 py-2 font-bold text-black bg-white rounded hover:bg-green-300">
-//                     Overview
-//                 </button>
-//             </Link>
-//         </div>
-//     )
-// }
-
-// export default Header;
