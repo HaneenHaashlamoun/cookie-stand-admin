@@ -9,7 +9,7 @@ export default function Header() {
             <h1 className="text-2xl">Cookie Stand Admin</h1>
             <div>
                 <button className="p-2 m-4 font-bold uppercase bg-green-500 rounded text-green hover:bg-green-600 text-gray-50">
-                    {user.username}
+                    {user?.username || "ananumous"}
                 </button>
                 <button className="p-2 m-4 font-bold bg-green-600 rounded-lg" onClick={logout}>Sign Out</button>
                 <Link href='/overview' >
